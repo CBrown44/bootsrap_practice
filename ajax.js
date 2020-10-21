@@ -1,3 +1,4 @@
+// Bosses
 const data = null;
 
 const xhr = new XMLHttpRequest();
@@ -15,6 +16,8 @@ xhr.setRequestHeader("x-rapidapi-key", "SIGN-UP-FOR-KEY");
 
 xhr.send(data);
 
+
+// Locations
 const data = null;
 
 const xhr = new XMLHttpRequest();
@@ -32,6 +35,8 @@ xhr.setRequestHeader("x-rapidapi-key", "2934d3483emsh3ea1fbe8a0e5bddp17c441jsnd9
 
 xhr.send(data);
 
+
+//Currencies
 const data = null;
 
 const xhr = new XMLHttpRequest();
