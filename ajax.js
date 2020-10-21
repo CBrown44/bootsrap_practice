@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 
 //bosses in game
-=======
-// Bosses
->>>>>>> master
 const data = null;
 
 const xhr = new XMLHttpRequest();
@@ -22,11 +18,7 @@ xhr.setRequestHeader("x-rapidapi-key", "SIGN-UP-FOR-KEY");
 xhr.send(data);
 
 
-<<<<<<< HEAD
 //locations in game
-=======
-// Locations
->>>>>>> master
 const data = null;
 
 const xhr = new XMLHttpRequest();
@@ -45,11 +37,7 @@ xhr.setRequestHeader("x-rapidapi-key", "2934d3483emsh3ea1fbe8a0e5bddp17c441jsnd9
 xhr.send(data);
 
 
-<<<<<<< HEAD
 //currency in game
-=======
-//Currencies
->>>>>>> master
 const data = null;
 
 const xhr = new XMLHttpRequest();
