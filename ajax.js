@@ -1,4 +1,3 @@
-
 //bosses in game
 const bossData = null;
 
