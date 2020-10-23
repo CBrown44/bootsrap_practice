@@ -52,20 +52,22 @@ const dealerName4 = document.querySelector('.dealerName4')
 const realName4 = document.querySelector('.realName4')
 const origin4 = document.querySelector('.origin4')
 
-const xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
+const rhr = new XMLHttpRequest();
+rhr.withCredentials = true;
 
-xhr.addEventListener("readystatechange", function () {
+rhr.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
 		console.log(this.responseText);
 	}
+
+	
 });
 
-xhr.open("GET", "https://rapidapi.p.rapidapi.com/dealers");
-xhr.setRequestHeader("x-rapidapi-host", "escape-from-tarkov.p.rapidapi.com");
-xhr.setRequestHeader("x-rapidapi-key", "40ea6137eemsh9ce3a93415e7d0ap17fac4jsndf9a819d6dde");
+rhr.open("GET", "https://rapidapi.p.rapidapi.com/dealers");
+rhr.setRequestHeader("x-rapidapi-host", "escape-from-tarkov.p.rapidapi.com");
+rhr.setRequestHeader("x-rapidapi-key", "40ea6137eemsh9ce3a93415e7d0ap17fac4jsndf9a819d6dde");
 
-xhr.send(data);
+rhr.send(data);
 
 
 //currency in game
