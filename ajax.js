@@ -23,6 +23,8 @@ xhr.withCredentials = true;
 xhr.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
 		console.log(this.responseText);
+
+		bossName1.innerHTML = data
 	}
 });
 
@@ -60,7 +62,7 @@ rhr.addEventListener("readystatechange", function () {
 		console.log(this.responseText);
 	}
 
-	
+
 });
 
 rhr.open("GET", "https://rapidapi.p.rapidapi.com/dealers");
