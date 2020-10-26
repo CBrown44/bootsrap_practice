@@ -82,9 +82,9 @@ bhr.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
 		console.log(this.responseText);
 	}
-	document.getElementById('rouble').value = [0].name;
-	document.getElementById('euro').value = [1].name;
-	document.getElementById('dollar').value = [2].name;
+	document.getElementById('rouble').innerHTML = [0].name;
+	document.getElementById('euro').innerHTML = [1].name;
+	document.getElementById('dollar').innerHTML = [2].name;
 });
 
 bhr.open("GET", "https://rapidapi.p.rapidapi.com/currencies");
