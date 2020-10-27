@@ -82,7 +82,7 @@ bhr.addEventListener("readystatechange", function () {
 	if (this.readyState === this.DONE) {
 		console.log(this.responseText);
 	}
-	document.getElementById('rouble').innerHTML = [0].name;
+	document.getElementById('ruble').innerHTML = [0].name;
 	document.getElementById('euro').innerHTML = [1].name;
 	document.getElementById('dollar').innerHTML = [2].name;
 });

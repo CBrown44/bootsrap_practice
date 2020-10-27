@@ -1,75 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Currency</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- This is to add color to the whole page -->
-    <style type="text/css">
+<!-- 
+    Bootstrap Practice Group Project
+    Participants:
+      Daniel Garcia
+      Caleb Brown
+    Date: 9-30-2020
+ -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Currencies</title>
+       <!-- Stylesheet for the Bootstrap -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+       <!-- This makes the Background HTML the same color as the Jumbotron Background -->
+     <style type="text/css">
+       body {
+         background-color: #E9ECEF;
+       }
+     </style>
+     <style type="text/css">
         body { background: #343a40 !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
     </style>
-</head>
-<body>
-    <!-- Adds a navbar to the site to travel to other pages -->
-    <nav class="navbar navbar-expand-lg navbar-dark text-light bg-dark">
-        <a class="navbar-brand" href="#">EFT Info</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
-                <a class="nav-link" href="playerKilled.html">Bosses In Game</a>
-                <a class="nav-link" href="hoursPlayed.html">Locations in game</a>
-                <a class="nav-link" href="searchStats.html">Currencies In Game</a>
-            </div>
-        </div>
-        <div class="jumbotron jumbotron-fluid">
-            <container class="text-sm-center">
-              <div class="container">
-                  <h1 class="display-4">Dealers</h1>
-                  <div class="container-sm">
-                    <img src="" alt="" class="card-img-top" style="height: 5em; width: 5em;">
-                  </div>
-                  <p class="lead">The Currencies in Escape from Tarkov.</p>
-              </div>
-            </container>
-        </div>
-        <container class="text-sm-center">
-            <table class="table table-striped table-dark">
-                <thead>
-                    <tr>
-                    <!-- The header to give a key on what column means what -->
-                        <th scope="col">Currency</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Symbol</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <!-- Pictures of the different Currencies in Tarcov -->
-                        <th scope="row"><img src="Roublesimage.png" alt="image of rouble from Tarkov" class="card-img-top" style="height: 2em; width: 2em;"></th>
-                        <td class="rouble">##################################################</td>
-                        <td class="roubleSymbol">₽</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="Eurosimage.png" alt="image of euro from Tarkov" class="card-img-top" style="height: 2em; width: 2em;"></th>
-                        <td class="euro">##################################################</td>
-                        <td class="euroSymbol">€</td>
-                    </tr>
-                    <tr>
-                        <th scope="row"><img src="2314507335cf6a428cc929.png" alt="image of dollar from Tarkov" class="card-img-top" style="height: 2em; width: 2em;"></th>
-                        <td class="dollar">###################################################</td>
-                        <td class="dollarSymbol">$</td>
-                    </tr>
-                </tbody>
-            </table>
-        </container>
-    </nav>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
-</html>
+ </head>
+ <body>
+     
+       <!-- A dark Navabar to navigate to the other pages that is located at the top -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+         <a class="navbar-brand" href="index.html">EFT Info</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+             <div class="navbar-nav">
+                   <!-- The links to the other pages on the site -->
+                 <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                 <a class="nav-link" href="playerKilled.html">Bosses in Game</a>
+                 <a class="nav-link" href="hoursPlayed.html">Dealers in Game</a>
+                 <a class="nav-link" href="searchStats.html">Currencies in Game</a>
+             </div>
+         </div>
+     </nav>
+ 
+ 
+       <!-- A big Title "Jumbotron" To Say what current page was about -->
+     <div class="jumbotron jumbotron-fluid bg-dark text-light">
+         <container class="text-sm-center">
+           <div class="container">
+               <h1 class="display-4">Currencies</h1>
+               <div class="container-sm">
+                   <!-- an image of a TNT block from Minecraft shrunken down with the style feature -->
+                 <img src="" alt="" class="card-img-top" style="height: 5em; width: 5em;">
+               </div>
+               <p class="lead">The Currencies in Escape from Tarkov.</p>
+           </div>
+         </container>
+     </div>
+ 
+     <!-- A table to showcase the top players who have killed the most people in Minecraft -->
+ <container class="text-sm-center">
+     <table class="table table-striped table-dark">
+         <thead>
+           <tr>
+               <!-- The header to give a key on what column means what -->
+             <th scope="col">Currency</th>
+             <th scope="col">Name</th>
+             <th scope="col">Symbol</th>
+           </tr>
+         </thead>
+         <tbody>
+           <tr>
+               <!-- Pictures of the different rarities of Sword to show which player has the best award to least -->
+             <th scope="row"><img src="Roublesimage.png" alt="image of dollar" class="card-img-top" style="height: 2em; width: 2em;"></th>
+             <td class="ruble"></td>
+             <td class="rubleSymbol">₽</td>
+           </tr>
+ 
+           <tr>
+             <th scope="row"><img src="Eurosimage.png" alt="image of dollar" class="card-img-top" style="height: 2em; width: 2em;"></th>
+             <td class="euro"></td>
+             <td class="euroSymbol">€</td>
+           </tr>
+ 
+           <tr>
+             <th scope="row"><img src="2314507335cf6a428cc929.png" alt="image of dollar" class="card-img-top" style="height: 2em; width: 2em;"></th>
+             <td class="dollar"></td>
+             <td class="dollarSymbol">$</td>
+           </tr>
+           
+         </tbody>
+     </table>
+ </container>
+ 
+     <script src="ajax.js"></script>
+       <!-- The Javascript links for the other side of Bootstrap -->
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ </body>
+ </html>
